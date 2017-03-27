@@ -8,8 +8,13 @@ module.exports = function(defaults) {
       'bootstrapVersion': 3,
       'importBootstrapFont': true,
       'importBootstrapCSS': false
+    },
+    'ember-font-awesome': {
+      useScss: true
     }
   });
+
+  app.import('bower_components/bootstrap-social/bootstrap-social.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

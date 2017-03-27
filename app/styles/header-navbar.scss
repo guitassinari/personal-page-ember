@@ -10,6 +10,18 @@
         & > a{
           color: $color2;
           font-weight: 700;
+          &.btn{
+            &.btn-facebook{
+              &:hover{
+                background-color: initial;
+                color: initial;
+              }
+            }
+            &:hover{
+              color: inherit;
+              background-color:  inherit;
+            }
+          }
         }
       }
     }

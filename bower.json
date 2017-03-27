@@ -1,5 +1,6 @@
 {
   "name": "personal-page-ember",
   "dependencies": {
+    "bootstrap-social": "^5.1.1"
   }
 }
