@@ -1,0 +1,17 @@
+.navbar{
+  &.navbar-default{
+    background-color: $color3;
+    & .navbar-brand{
+      background-color: $color2;
+      font-weight: 700;
+    }
+    & .navbar-nav{
+      & > li{
+        & > a{
+          color: $color2;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
