@@ -2,6 +2,8 @@
 
 [![Code Climate](https://codeclimate.com/repos/58daee18ddf0030291000635/badges/3932fc02041b170b93a7/gpa.svg)](https://codeclimate.com/repos/58daee18ddf0030291000635/feed)
 
+[![Build Status](https://semaphoreci.com/api/v1/gotassinari/personal-page-ember/branches/master/badge.svg)](https://semaphoreci.com/gotassinari/personal-page-ember)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
