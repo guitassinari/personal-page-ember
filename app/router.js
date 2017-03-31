@@ -7,10 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-<<<<<<< 689372ace6a5bbd097d333c8a49069e7d6eb5f07
   "use strict";
-=======
->>>>>>> adds home page
   this.route('home');
 });
 
