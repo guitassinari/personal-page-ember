@@ -7,19 +7,11 @@ moduleForComponent('header-navbar', 'Integration | Component | header navbar', {
 
 test('it renders', function(assert) {
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{header-navbar}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#header-navbar}}
-      template block text
-    {{/header-navbar}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('.navbar-brand').text().trim(), 'Guilherme Tassinari', 'brand should have my name');
+  assert.equal(this.$('a[href$="https://github.com/guitassinari"]').length, 1, 'should have a github link');
+  assert.equal(this.$('.fa-github').length, 1, 'should have github logo');
+  assert.equal(this.$('a[href$="https://www.linkedin.com/in/guilherme-tassinari-6982366b/"]').length, 1, 'should have a github link');
+  assert.equal(this.$('.fa-linkedin').length, 1, 'should have linkedin logo');
 });
