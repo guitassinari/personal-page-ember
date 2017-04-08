@@ -14,7 +14,6 @@ $color3: rgba(50, 98, 115, 1);
 $color4: rgba(238, 238, 238, 1);
 $color5: rgba(227, 151, 116, 1);
 
-<<<<<<< 689372ace6a5bbd097d333c8a49069e7d6eb5f07
 $colorList : $color1 $color2 $color3 $color4 $color5;
 
 @each $color in $colorList {
@@ -28,15 +27,3 @@ $colorList : $color1 $color2 $color3 $color4 $color5;
     color: $color;
   }
 }
-=======
-$colorList : $color1 $color2 color3 $color4 $color5;
-
-@each $color in $colorList{
-  $i: index($colorList, $color);
-  .background-color#{$i}{
-    background-color: $color;
-  }
-  .color#{$i}{
-    color: $color;
-  }}
->>>>>>> adds home page
