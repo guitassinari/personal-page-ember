@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   careerExperience : function(){
-    console.log(this.get('model'))
+    "use strict";
     return this.get('model');
   }
 });

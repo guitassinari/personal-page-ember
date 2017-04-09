@@ -1,8 +1,8 @@
 import Ember from 'ember';
-import CareerExperience from '../models/career-experience';
 
 export default Ember.Route.extend({
   model() {
+    "use strict";
     var careerExperience = this.store.createRecord('career-experience',{
       name : 'Hey, ho, lets go!',
       company : 'Me Salva!',
