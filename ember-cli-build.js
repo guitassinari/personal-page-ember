@@ -11,6 +11,11 @@ module.exports = function(defaults) {
     },
     'ember-font-awesome': {
       useScss: true
+    },
+    stylelint: {
+      linterConfig: {
+        syntax: 'scss'
+      },
     }
   });
 
