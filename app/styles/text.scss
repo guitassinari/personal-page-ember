@@ -1,0 +1,15 @@
+p{
+  text-indent: 100px;
+  line-height: 1.7em;
+  letter-spacing: 0.05em;
+}
+
+$fontSizes : "extra-small" 10px, "small" 13px, "normal" 17px, "large" 21px, "extra-large" 25px;
+
+@each $fontSize in $fontSizes{
+  $sizeName : nth($fontSize,1);
+  $sizeValue : nth($fontSize, 2);
+  .fs-#{$sizeName}{
+    font-size: #{$sizeValue};
+  }
+}
