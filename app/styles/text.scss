@@ -1,4 +1,4 @@
-p{
+p {
   text-indent: 100px;
   line-height: 1.7em;
   letter-spacing: 0.05em;
@@ -6,10 +6,11 @@ p{
 
 $fontSizes : "extra-small" 10px, "small" 13px, "normal" 17px, "large" 21px, "extra-large" 25px;
 
-@each $fontSize in $fontSizes{
-  $sizeName : nth($fontSize,1);
+@each $fontSize in $fontSizes {
+  $sizeName : nth($fontSize, 1);
   $sizeValue : nth($fontSize, 2);
-  .fs-#{$sizeName}{
+
+  .fs-#{$sizeName} {
     font-size: #{$sizeValue};
   }
 }

@@ -16,11 +16,14 @@ $color5: rgba(227, 151, 116, 1);
 
 $colorList : $color1 $color2 $color3 $color4 $color5;
 
-@each $color in $colorList{
+@each $color in $colorList {
   $i: index($colorList, $color);
-  .background-color#{$i}{
+
+  .background-color#{$i} {
     background-color: $color;
   }
-  .color#{$i}{
+
+  .color#{$i} {
     color: $color;
-  }}
+  }
+}

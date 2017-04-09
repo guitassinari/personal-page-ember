@@ -1,52 +1,59 @@
-.navbar{
+.navbar {
   position: absolute !important;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 99;
-  &.navbar-default{
-    background-color: #99ccff;
+
+  &.navbar-default {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: $color3;
-    & .navbar-brand{
+
+    & .navbar-brand {
       background-color: $color2;
       font-weight: 700;
-      &:hover{
+
+      &:hover {
         background-color: $color4;
       }
     }
-    & .navbar-nav{
-      & > li{
-        &.active{
-          & > a{
+
+    & .navbar-nav {
+      & > li {
+        &.active {
+          & > a {
             background-color: $color1;
           }
         }
-        & > a{
-          &:hover{
-            color : $color4;
-          }
+
+        & > a {
           color: $color2;
           font-weight: 700;
-          &.btn{
-            &:hover{
+
+          &:hover {
+            color: $color4;
+          }
+
+          &.btn {
+            &:hover {
               color: inherit;
-              background-color:  inherit;
+              background-color: inherit;
             }
           }
         }
       }
 
-      &.navbar-social{
-        & > li{
-          & > a{
-            &:hover{
-              color : #FFFFFF;
+      &.navbar-social {
+        & > li {
+          & > a {
+            &:hover {
+              color: #fff;
             }
-            & .fa{
+
+            & .fa {
               font-size: 1.3em;
             }
           }
@@ -57,6 +64,7 @@
 }
 
 $headerHeight : 50px;
-.header-offset{
+
+.header-offset {
   margin-top: $headerHeight;
 }
