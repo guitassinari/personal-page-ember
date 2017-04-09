@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   "use strict";
   this.route('home');
+  this.route('career-experiences');
 });
 
 export default Router;

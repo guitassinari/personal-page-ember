@@ -4,6 +4,10 @@ p {
   letter-spacing: 0.05em;
 }
 
+.align-center {
+  text-align: center;
+}
+
 $fontSizes : "extra-small" 10px, "small" 13px, "normal" 17px, "large" 21px, "extra-large" 25px;
 
 @each $fontSize in $fontSizes {

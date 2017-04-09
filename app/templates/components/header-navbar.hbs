@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Guilherme Tassinari</a>
+      {{#link-to 'home' class="navbar-brand"}}Guilherme Tassinari{{/link-to}}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Career History</a></li>
+        <li class="active">{{#link-to 'career-experiences'}}Career History{{/link-to}}</li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Other Informations</a></li>
       </ul>
