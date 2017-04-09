@@ -5,8 +5,7 @@ export default DS.Model.extend({
   description : DS.attr('string'),
   company : DS.attr('string'),
   started_at : DS.attr('date'),
-  stopped_at : DS.attr('date')
-  // duration : DS.computed(function(started_at - stopped_at){
-  //
-  // })
+  stopped_at : DS.attr('date'),
+  image : DS.attr('string'),
+  technologies : DS.attr()
 });

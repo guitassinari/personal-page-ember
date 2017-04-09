@@ -8,9 +8,18 @@ export default Ember.Route.extend({
       company : 'Me Salva!',
       description : 'Meu teste!',
       started_at : new Date(),
-      stopped_at : new Date()
+      stopped_at : new Date(),
+      technologies : ['AngularJS', 'EmberJS', 'React']
     });
-    console.log(careerExperience)
-    return [careerExperience];
+    var careerExperience2 = this.store.createRecord('career-experience',{
+      name : 'Hey, ho, lets go!',
+      company : 'Ciee-RS',
+      description : 'Meu teste!',
+      started_at : new Date(),
+      stopped_at : new Date(),
+      technologies : ['AngularJS', 'Java', 'React']
+    });
+
+    return [careerExperience, careerExperience2];
   }
 });

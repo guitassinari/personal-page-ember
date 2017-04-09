@@ -1,13 +1,10 @@
-{{log model}}
-<div class="">
-  Nome : {{model.name}}
-</div>
-<div class="">
-  Descrição : {{model.description}}
-</div>
-<div class="">
-  Empresa : {{model.company}}
-</div>
-<div class="">
-  Começou em {{model.started_at}} e saiu em {{model.stopped_at}}
+<div class="background-color5 ">
+  <div class="color4 fs-large align-center">
+    {{model.company}}
+  </div>
+  <ul class="inline-list align-center">
+    {{#each model.technologies as |tech|}}
+    <li class="color4">{{tech}}</li>
+    {{/each}}
+  </ul>
 </div>

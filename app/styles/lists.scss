@@ -1,0 +1,10 @@
+.custom-list{
+  padding : 0px;
+  margin: 0px;
+}
+ul.inline-list{
+  @extend .custom-list;
+  & li{
+    display: inline-block;
+  }
+}
